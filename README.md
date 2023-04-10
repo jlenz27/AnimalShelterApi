@@ -12,6 +12,12 @@
    * SwaggerUI
    * Postman
 
+# Further Exploration
+*The Further Exploration that i chose is to add Versioning to the API. There is currently only one version but more versions can be added in the future if needed. To acess a specific version use
+```
+GET http://localhost:5000/api/v1animals/
+```
+*Where v1 is the specific version that you want to use
 # #Setup/Installation Guide
  
 ## Set up the API
@@ -51,6 +57,35 @@ POST http://localhost:5000/api/v1animals/
 PUT http://localhost:5000/api/v1animals/{id}
 DELETE http://localhost:5000/api/v1animals/{id}
 ```
+
+## Query Examples
+  
+  * You may query specific entry IDs by appending it to the end:
+      ```
+      GET https://localhost:5001/api/v1Animals/4
+      ```
+
+  * A body is required for POST requests. Example of a good request would be:
+      ```
+      { 
+        "name": "Maggie",
+        "species": "Dog",
+        "Days in Shelter": 3,
+      }
+      ```
+  * An ID is required for PUT requests (modifying an existing entry) including the ID of the entry:
+      ```
+      {
+        "animalId": 1,
+        "name": "Henry",
+        "species": "Dog",
+        "Days In Shelter": 10,
+      }
+      ```
+  * To delete an entry, simply enter the id of the entry you'd like to delete:
+      ```
+      DELETE  https://localhost:5001/api/v1Animals/8
+
  # Known Bugs
 
 - _No know bugs
