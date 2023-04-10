@@ -13,11 +13,11 @@
    * Postman
 
 # Further Exploration
-*The Further Exploration that i chose is to add Versioning to the API. There is currently only one version but more versions can be added in the future if needed. To acess a specific version use
+The Further Exploration that I chose is to add Versioning to the API. There is currently only one version but more versions can be added in the future if needed. To acess a specific version use
 ```
 GET http://localhost:5000/api/v1animals/
 ```
-*Where v1 is the specific version that you want to use
+Where "v1" is the specific version that you want to use
 # #Setup/Installation Guide
  
 ## Set up the API
